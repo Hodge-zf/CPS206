@@ -9,5 +9,7 @@ public class GenericExample{
     System.out.println(list);
     System.out.println(list.contains("Kulis"));
     System.out.println(list.contains("Hodgekins"));
+    String firstName=list.get(1);
+    System.out.println("Your first name is "+firstName);
   }
 }
