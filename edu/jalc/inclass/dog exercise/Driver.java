@@ -7,5 +7,7 @@ public class Driver{
     System.out.println(fido.equals(spot));
     System.out.println(fido);
     System.out.println(fido.hashCode());
+
+    fido.bark();
   }
 }
