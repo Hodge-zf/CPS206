@@ -1,14 +1,18 @@
 package edu.jalc.inclass.animal;
-
+import java.util.ArrayList;
 public class AnimalDriver{
 
-  //Animal animal = Animal("growl");
+  public static void animalSays(Animal animal){
+    System.out.println(animal);
+  }
 
-public static void main(String[] args){
-  animalSays();
-}
+  public void main(String[] args){
+    ArrayList<Animal> animals = new ArrayList<>();
+    animals.add(new Dog("bark","growl","whimper"));
+    animals.add(new Cat("meow","purr","growl"));
 
-public static void animalSays(String animal){
-  System.out.println(animal);
+    for(Animal animal : animals){
+    AnimalDriver.animalSays(animals);
+    }
   }
 }
